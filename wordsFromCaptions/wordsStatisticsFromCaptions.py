@@ -10,13 +10,13 @@ def main():
     urllib.urlretrieve ("http://www.bing.com/translator/api/language/Speak?locale=en-US&gender=male&media=audio/mp3&text=Try",	"1.mp3")
     r = requests.get("https://www.coursera.org/api/subtitleAssetProxy.v1/FE4eZY8zQk6OHmWPMwJOrQ?expiry=1456790400000&hmac=d1yz-X_aQjU7CmJ_UWOJJaspeK8Bt7-Ju53BLg1e9VY&fileExtension=vtt")
     
-    arq2 = open('legenda.srt', 'r')
-    arq3 = open('referencia.txt', 'r')
+    arq2 = open('captions.srt', 'r')
+    arq3 = open('captionsForStatistics.txt', 'r')
     
     strcont2 = arq3.read()
     strcont= arq2.read()
 
-    arq = open('conhecidas.csv', 'r')
+    arq = open('known.csv', 'r')
     strcont=strcont.lower()
     strcont2=strcont2.lower()
     
